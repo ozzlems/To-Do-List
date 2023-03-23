@@ -19,3 +19,51 @@ input:not([type="radio"]):not([type="checkbox"]), button {
     background: none;
     cursor: initial;
 }
+.title1{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 3.5rem;
+    padding-right: 1.5rem;
+    font-size: 42px;
+    text-shadow:  0 2px 3px #8093e9, 
+    -1px 4px 3px #3e639f, 
+    -2px 5px 7px #3992df, -2px 4px 5px #4a9ce3;
+    
+    font-weight: 550;
+   margin-left: 15px;
+    
+    max-width: 300px;
+    
+    
+}
+.title{
+    color: rgba(57, 56, 56, 0.777);
+    text-shadow:   1px 2px 5px #8093e9, 
+    -1px 4px 5px #5c90e3, 
+    -2px 5px 5px #3992df ;
+}
+
+.fancy{
+    color: rgba(57, 56, 56, 0.777);
+    font-weight: 600;
+    text-shadow:  0 2px 3px #8093e9, 
+    -1px 4px 3px #455e98, 
+    -2px 5px 2px #479ce7;
+  
+    
+
+}
+
+section{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 1.5rem;
+}
+h3{
+    color: rgba(57, 56, 56, 0.777);
+    text-shadow:   1px 2px 5px #8093e9, 
+    -1px 4px 5px #5c90e3, 
+    -2px 5px 11px #3992df ;
+    
+}
