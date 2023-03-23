@@ -8,7 +8,14 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #005486;
-    background-image: linear-gradient(180deg, #005486 0%, #62a2a7 100%);
-    
+    background-color: #5b95ca;
+    background-image: linear-gradient(225deg, #5b95ca 0%, #44b3e5 33%);
+    color: white;
+}
+input:not([type="radio"]):not([type="checkbox"]), button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: initial;
 }
