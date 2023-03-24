@@ -25,7 +25,7 @@ input:not([type="radio"]):not([type="checkbox"]), button {
     padding-left: 3.5rem;
     padding-right: 1.5rem;
     font-size: 42px;
-    text-shadow:  0 2px 3px #8093e9, 
+    text-shadow:  0 2px 3px #9664e2, 
     -1px 4px 3px #3e639f, 
     -2px 5px 7px #3992df, -2px 4px 5px #4a9ce3;
     
@@ -46,8 +46,8 @@ input:not([type="radio"]):not([type="checkbox"]), button {
 .fancy{
     color: rgba(57, 56, 56, 0.777);
     font-weight: 600;
-    text-shadow:  0 2px 3px #8093e9, 
-    -1px 4px 3px #455e98, 
+    text-shadow:  0 3px 4px #b371f5, 
+    -1px 3px 3px #455e98, 
     -2px 5px 2px #479ce7;
   
     
@@ -62,9 +62,11 @@ section{
 }
 h3{
     color: rgba(57, 56, 56, 0.777);
-    text-shadow:   1px 2px 5px #8093e9, 
-    -1px 4px 5px #5c90e3, 
-    -2px 5px 11px #3992df ;
+    text-shadow:   2px 2px 3px #c05ffce1, 
+    -1px 4px 5px #7da6e7, 
+    -2px 5px 11px #bddffd ;
+    font-size: 19px;
+    font-weight: bolder;
    
     
 }
@@ -94,7 +96,38 @@ text-shadow:  0 2px 7px #8093e9;
     height: 50px;
     margin-top: 10px;
     box-shadow:  0 0 0 2px #8d9fed, 8px 9px 0 0 rgba(95, 62, 177, 0.608);
-    font-weight: 550;
-    border-radius: 6px;
+    font-weight: 650;
+   border-radius: 6px;
 }
+
+
+#create-todo input::placeholder{
+opacity: 55%;
+font-weight: 500;
+}
+
+input[type="radio"] , input[type="checkbox"] {
+    display: none;
+}
+
+
+input[type="checkbox"]{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid purple;
+    box-shadow: 0 0 2px #fff, 0 0 10px #ffffff, 0 0 20px #0ba9ca, 0 0 30px #0eb9db,
+    0 0 40px #077c93, 0 0 50px #0ba9ca; }
+
+   .create-todo input[type="checkbox"]::after {
+        content: "";
+        display: block;
+        opacity: 0;
+        width: 0px;
+        height: 0px;
+        background-color: black;
+        }
 
