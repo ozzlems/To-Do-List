@@ -108,6 +108,7 @@ font-weight: 500;
 
 input[type="radio"] , input[type="checkbox"] {
     display: none;
+    cursor: pointer;
 }
 
 
@@ -119,9 +120,9 @@ input[type="checkbox"]{
     height: 22px;
     border-radius: 50%;
     border: 2px solid purple;
-    box-shadow: 0 0 2px #fff, 0 0 10px #ffffff, 0 0 20px #0ba9ca, 0 0 30px #0eb9db,
+    box-shadow: 0 0 2px #fff, 0 0 1px #ffffff, 0 0 20px #0ba9ca, 0 0 30px #44ddfc,
     0 0 40px #077c93, 0 0 50px #0ba9ca; }
-
+   
    .create-todo input[type="checkbox"]::after {
         content: "";
         display: block;
@@ -140,17 +141,57 @@ input[type="checkbox"]{
   color: rgba(47, 46, 46, 0.777);
     font-weight: bold;
     background-color: rgba(255, 255, 255, 0.997);
-    border: 3px solid #8675ea;
+    border: 2px solid #8675ea;
     border-radius: 10px;
-    box-shadow:  0 0 0 2px #8d9fed, 8px 9px 0 0 rgba(95, 62, 177, 0.43);
+ box-shadow:  0 0 0 2px #8d9fed, 6px 9px 0 0 rgba(95, 62, 177, 0.43);
     cursor: pointer;
     transition: 0.2s ease-in-out;
   }
 
   .create-todo input[type = "submit"]:hover{
     opacity: 0.8;
-    border: 3px solid #6d5adb;
-    background-color: #e3c2f1;
+    border: 3px solid #755ef8c5;
+    background-color: #c9beeb;
     font-weight: bolder;
-    color: rgba(39, 38, 38, 0.777);
+    
+    color: rgba(0, 0, 0, 0.777);
+    box-shadow:   
+    8px 9px 0 0 rgba(95, 62, 177, 0.43),
+    10px 9px 0 0 #2d2d51b5
+    ; }
  
+    .todo-list .list{
+        margin: 1.2rem 0;
+
+    }
+
+    .todo-list .todo-item{
+        display: flex;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        padding: 1rem;
+        border-radius: 6px;
+        box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+       margin-bottom: 1rem;
+       border-color:rgba(33,33,33,.7) ;
+
+    }
+
+    .todo-item label{
+        display: block;
+        margin-right: 1.5rem;
+        cursor: pointer;
+
+    }
+    .todo-item .todo-content {
+        flex: 1 1 0%;
+    }
+
+    .todo-item .todo-content input{
+        color: rgb(63, 63, 63);
+        font-weight: bold;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 15px;
+
+
+    }
