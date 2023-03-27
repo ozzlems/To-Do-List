@@ -23,10 +23,18 @@ window.addEventListener('load', () => {
 
    localStorage.setItem('todos' , JSON.stringify(todos));
    e.target.reset();
- })
 
-
-
-
-
+   // create function for display todo inputs
+   DisplayTodos();
 })
+DisplayTodos(); // we can also call it here after display when the page is loadec
+})
+
+function DisplayTodos(){  // func for todo list elements where we push our new todos 
+ const todoList = document.querySelector('#todo-list');   
+ todoList.innerHTML = ""; // everytime we call display we re gonna clear all of the elements 
+
+ todos.forEach(todo => {
+
+ })
+}
