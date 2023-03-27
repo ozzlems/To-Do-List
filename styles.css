@@ -8,8 +8,8 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #5b95ca;
-    background-image: linear-gradient(228deg, #6187ab 0%, #53bdee 33%);
+    background-color: #4e7da9;
+    background-image: linear-gradient(148deg, #6cb8ff 0%, #53bdee 30%  );
     color: white;
 }
 input:not([type="radio"]):not([type="checkbox"]), button {
@@ -37,18 +37,19 @@ input:not([type="radio"]):not([type="checkbox"]), button {
     
 }
 .title{
-    color: rgba(57, 56, 56, 0.777);
+    color: rgba(22, 21, 21, 0.777);
     text-shadow:   1px 2px 5px #8093e9, 
     -1px 4px 5px #5c90e3, 
     -2px 5px 5px #3992df ;
 }
 
 .fancy{
-    color: rgba(57, 56, 56, 0.777);
+    color: rgba(55, 50, 50, 0.777);
     font-weight: 600;
     text-shadow:  0 3px 4px #b371f5, 
     -1px 3px 3px #455e98, 
-    -2px 5px 2px #479ce7;
+    -2px 5px 2px #479ce7,
+    -4 3px 1px #b371f5, ;
   
     
 
@@ -61,11 +62,11 @@ section{
     padding-right: 1.5rem;
 }
 h3{
-    color: rgba(57, 56, 56, 0.777);
-    text-shadow:   2px 2px 3px #c05ffce1, 
+    color: rgba(27, 25, 25, 0.777);
+    text-shadow:   2px 2px 4px #c05ffce1, 
     -1px 4px 5px #7da6e7, 
     -2px 5px 11px #bddffd ;
-    font-size: 19px;
+    font-size: 20px;
     font-weight: bolder;
    
     
@@ -80,10 +81,11 @@ margin-left: 0.6rem;
 flex: 1 1 0%;
 min-width: 0;
 font-size: 1.6rem;
-font-weight: 700;
-color: rgba(47, 46, 46, 0.777);
-line-height: 2rem;
-text-shadow:  0 2px 7px #8093e9;
+font-weight: 1000;
+color: rgba(21, 21, 20, 0.777);
+
+
+
 }
 
 .create-todo input[type="text"] {
@@ -91,18 +93,20 @@ text-shadow:  0 2px 7px #8093e9;
     width: 100%;
     font-size: 1.125rem;
     padding: 1rem 1.5rem;
-    color: rgb(0, 0, 0); 
+   color:  rgba(7, 7, 7, 0.777);
     background-color: rgba(255, 255, 255, 0.93);
     height: 50px;
     margin-top: 10px;
-    box-shadow:  0 0 0 2px #8d9fed, 8px 9px 0 0 rgba(95, 62, 177, 0.608);
+    box-shadow:  0 0 2px 3px #8d9fed, 8px 9px 0 0 rgba(95, 62, 177, 0.608);
     font-weight: 650;
    border-radius: 6px;
+   
+
 }
 
 
 #create-todo input::placeholder{
-opacity: 55%;
+opacity: 65%;
 font-weight: 500;
 }
 
@@ -233,5 +237,3 @@ width: 70px;
         text-decoration-color: #313131;
          text-decoration-thickness: 2px ;
     }
-
-    

@@ -27,7 +27,7 @@ window.addEventListener('load', () => {
    // create function for display todo inputs
    DisplayTodos();
 })
-DisplayTodos(); // we can also call it here after display when the page is loadec
+DisplayTodos(); // we can also call it to display as soon as when the page is loadec
 })
 
 function DisplayTodos(){  // func for todo list elements where we push our new todos 
@@ -35,6 +35,14 @@ function DisplayTodos(){  // func for todo list elements where we push our new t
  todoList.innerHTML = ""; // everytime we call display we re gonna clear all of the elements 
 
  todos.forEach(todo => {
+    const todoItem = document.createElement('div'); // Her bir "todo" için yeni bir div öğesi oluşturulur.
+    todoItem.classList.add('todo-item')   //// "todo-item" sınıfı, oluşturulan div öğesine eklenir.
+
+    const label = document.createElement('label');
+    const input = document.createElement('input');
+    const span = document.createElement('span');
+    const content = document.createElement('div');
+    const actions = document.createElement('div');
 
  })
 }
