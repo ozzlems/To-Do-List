@@ -48,7 +48,7 @@ function DisplayTodos(){  // func for todo list elements where we push our new t
 
   input.type = 'checkbox'; // thats what we look that for is done or not done  
   input.checked = todo.done; //this will tell if its done or not done
- span.classList.add('bubble');
+ span.classList.add('submit');
 
  content.classList.add('todo-content');
  actions.classList.add('actions');
@@ -84,5 +84,27 @@ function DisplayTodos(){  // func for todo list elements where we push our new t
     }
     DisplayTodos();  // after any change , display edited todos and resave to local storage
  })
+
+edit.addEventListener('click' , e=> {
+const input = content.querySelector('input');
+input.removeAttribute('readonly');
+input.focus();
+input.addEventListener('blur', e=> {
+    input.setAttribute('readonly', true);
+    todo.content = e.target.value;
+    localStorage.setItem('todos' , JSON.stringify(todos));
+    DisplayTodos();
+})
+})
+
+deleteButton.addEventListener('click' e=> {
+todos = todos.filter(t => t != todo);
+localStorage.setItem('todos' , JSON.stringify(todos));
+DisplayTodos();
+})
+
+
+
+
 })
 }
