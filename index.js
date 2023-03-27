@@ -76,6 +76,13 @@ function DisplayTodos(){  // func for todo list elements where we push our new t
     todo.done = e.target.checked;
     localStorage.setItem('todos' , JSON.stringify(todos));
 
+    if(todo.done){
+        todoItem.classList.add('done');
+    }
+    else{
+        todoItem.classList.remove('done');
+    }
+    DisplayTodos();  // after any change , display edited todos and resave to local storage
  })
 })
 }
