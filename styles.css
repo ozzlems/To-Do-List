@@ -227,3 +227,11 @@ width: 70px;
 .todo-item .actions button:hover {
     opacity: 0.85;
     box-shadow:  0 0 0 2px #000000, 6px 9px 0 0 rgba(255, 255, 255, 0.43); }
+
+    .todo-item.done .todo-content input{
+        text-decoration: line-through;
+        text-decoration-color: #313131;
+         text-decoration-thickness: 2px ;
+    }
+
+    
