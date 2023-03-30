@@ -141,10 +141,11 @@ input[type="checkbox"]{
   .create-todo input[type = "submit"]{
     display: block;
     width: 100%;
+    right: 50%;
     align-items: center;
      font-size: 1.155rem;
     padding: 0.8rem 1.5rem;
-  color: rgba(47, 46, 46, 0.777);
+  color: rgba(29, 28, 28, 0.777);
    
     font-family: 'Ubuntu', sans-serif;
     background-color: rgba(255, 255, 255, 0.997);
