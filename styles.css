@@ -82,8 +82,8 @@ flex: 1 1 0%;
 min-width: 0;
 font-size: 1.6rem;
 font-weight: 1000;
-color: rgba(21, 21, 20, 0.777);
-
+color: rgba(19, 19, 19, 0.777);
+opacity: 90%;
 
 
 }
@@ -98,14 +98,15 @@ color: rgba(21, 21, 20, 0.777);
     height: 50px;
     margin-top: 10px;
     box-shadow:  0 0 2px 3px #8d9fed, 8px 9px 0 0 rgba(95, 62, 177, 0.608);
-    font-weight: 650;
+    font-weight: 850;
    border-radius: 6px;
    
 
 }
 
 
-#create-todo input::placeholder{
+
+.create-todo  input::placeholder{
 opacity: 65%;
 font-weight: 500;
 }
@@ -237,3 +238,4 @@ width: 70px;
         text-decoration-color: #313131;
          text-decoration-thickness: 2px ;
     }
+    
