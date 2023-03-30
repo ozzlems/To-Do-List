@@ -48,7 +48,7 @@ function DisplayTodos(){  // func for todo list elements where we push our new t
 
   input.type = 'checkbox'; // thats what we look that for is done or not done  
   input.checked = todo.done; //this will tell if its done or not done
- span.classList.add('submit');
+ span.classList.add('bubble');
 
  content.classList.add('todo-content');
  actions.classList.add('actions');
@@ -97,7 +97,7 @@ input.addEventListener('blur', e=> {
 })
 })
 
-deleteButton.addEventListener('click' e=> {
+deleteButton.addEventListener('click' , e => {
 todos = todos.filter(t => t != todo);
 localStorage.setItem('todos' , JSON.stringify(todos));
 DisplayTodos();
