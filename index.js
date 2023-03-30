@@ -25,12 +25,12 @@ window.addEventListener('load', () => {
    e.target.reset();
 
    // create function for display todo inputs
-   DisplayTodos();
+   
 })
-DisplayTodos(); // we can also call it to display as soon as when the page is loadec
+// we can also call it to display as soon as when the page is loadec
 })
 
-function DisplayTodos(){  // func for todo list elements where we push our new todos 
+// func for todo list elements where we push our new todos 
  const todoList = document.querySelector('#todo-list');   
  todoList.innerHTML = ""; // everytime we call display we re gonna clear all of the elements 
 
@@ -45,10 +45,13 @@ function DisplayTodos(){  // func for todo list elements where we push our new t
     const actions = document.createElement('div');
     const edit = document.createElement('button');
     const deleteButton = document.createElement('button');
+     todoItem.classList.add("submit");
+     content.classList.add("content");
+     content = submit;
+     
 
   input.type = 'checkbox'; // thats what we look that for is done or not done  
   input.checked = todo.done; //this will tell if its done or not done
- span.classList.add('bubble');
 
  content.classList.add('todo-content');
  actions.classList.add('actions');
@@ -82,7 +85,7 @@ function DisplayTodos(){  // func for todo list elements where we push our new t
     else{
         todoItem.classList.remove('done');
     }
-    DisplayTodos();  // after any change , display edited todos and resave to local storage
+   // after any change , display edited todos and resave to local storage
  })
 
 edit.addEventListener('click' , e=> {
@@ -93,18 +96,17 @@ input.addEventListener('blur', e=> {
     input.setAttribute('readonly', true);
     todo.content = e.target.value;
     localStorage.setItem('todos' , JSON.stringify(todos));
-    DisplayTodos();
+   
 })
 })
 
 deleteButton.addEventListener('click' , e => {
 todos = todos.filter(t => t != todo);
 localStorage.setItem('todos' , JSON.stringify(todos));
-DisplayTodos();
-})
-
-
-
 
 })
-}
+
+
+
+
+})
