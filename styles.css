@@ -22,38 +22,38 @@ input:not([type="radio"]):not([type="checkbox"]), button {
 .title1{
     margin-top: 2rem;
     margin-bottom: 2rem;
-    padding-left: 3.5rem;
+    padding-left: 5rem;
     padding-right: 1.5rem;
     font-size: 42px;
     text-shadow:  0 2px 3px #9664e2, 
     -1px 4px 3px #3e639f, 
     -2px 5px 7px #3992df, -2px 4px 5px #4a9ce3;
-    
-    font-weight: 550;
-   margin-left: 15px;
-    
+     font-weight: 550;
+   margin-left: 60px;
     max-width: 300px;
+}
+.fancy{
+    color: rgba(59, 57, 57, 0.777);
+    font-weight: 600;
+    text-shadow:  0 3px 4px #b371f5, 
+    -1px 3px 3px #455e98, 
+    -2px 5px 2px #235f94,
+    -4 3px 1px #b371f5, ;
+ 
     
-    
+
 }
 .title{
     color: rgba(22, 21, 21, 0.777);
     text-shadow:   1px 2px 5px #8093e9, 
     -1px 4px 5px #5c90e3, 
     -2px 5px 5px #3992df ;
+ 
+    padding-top: 10px;
 }
 
-.fancy{
-    color: rgba(55, 50, 50, 0.777);
-    font-weight: 600;
-    text-shadow:  0 3px 4px #b371f5, 
-    -1px 3px 3px #455e98, 
-    -2px 5px 2px #479ce7,
-    -4 3px 1px #b371f5, ;
-  
-    
 
-}
+
 
 section{
     margin-top: 2rem;
@@ -63,13 +63,17 @@ section{
 }
 h3{
     color: rgba(27, 25, 25, 0.777);
-    text-shadow:   2px 2px 4px #c05ffce1, 
+    text-shadow:   2px 2px 3px #c05ffce1, 
     -1px 4px 5px #7da6e7, 
     -2px 5px 11px #bddffd ;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bolder;
-   
+    margin-left: 20px;
+  
     
+}
+.title2{
+    padding-left: 12px;
 }
 
 .greeting .title{
@@ -77,18 +81,19 @@ h3{
 }
 
 .greeting .title input{
-margin-left: 0.6rem;
+margin-left: 0.4rem;
 flex: 1 1 0%;
 min-width: 0;
 font-size: 1.6rem;
 font-weight: 1000;
 color: rgba(19, 19, 19, 0.777);
-opacity: 90%;
+opacity: 100%;
+
 
 
 }
 
-.create-todo input[type="text"] {
+#new-todo-form input[type="text"] {
     display: block;
     width: 100%;
     font-size: 1.125rem;
@@ -106,7 +111,7 @@ opacity: 90%;
 
 
 
-.create-todo  input::placeholder{
+#new-todo-form input::placeholder{
 opacity: 65%;
 font-weight: 500;
 }
@@ -118,7 +123,7 @@ input[type="radio"] , input[type="checkbox"] {
 }
 
 
-input[type="checkbox"]{
+#todo-list input[type="checkbox"]{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,7 +134,7 @@ input[type="checkbox"]{
     box-shadow: 0 0 2px #fff, 0 0 1px #ffffff, 0 0 20px #f0e7e7, 0 0 30px #44ddfc,
     0 0 40px #077c93, 0 0 50px #0ba9ca; }
    
-   .create-todo input[type="checkbox"]::after {
+   #todo-list input[type="checkbox"]::after {
         content: "";
         display: block;
         opacity: 0;
@@ -138,7 +143,7 @@ input[type="checkbox"]{
         background-color: black;
         }
 
-  .create-todo input[type = "submit"]{
+  #new-todo-form input[type = "submit"]{
     display: block;
     width: 100%;
     right: 50%;
@@ -156,11 +161,11 @@ input[type="checkbox"]{
     transition: 0.2s ease-in-out;
   }
 
-  .create-todo input[type = "submit"]:hover{
+  #new-todo-form input[type = "submit"]:hover{
     opacity: 0.8;
     border: 3px solid #755ef8c5;
     background-color: #c9beeb;
-   
+     
     font-family: 'Ubuntu', sans-serif;
     color: rgba(0, 0, 0, 0.967);
     box-shadow:   
@@ -236,7 +241,8 @@ width: 70px;
 
     .todo-item.done .todo-content input{
         text-decoration: line-through;
-        text-decoration-color: #313131;
+        text-decoration-color: #565656;
+        opacity: 95%;
          text-decoration-thickness: 2px ;
     }
     
